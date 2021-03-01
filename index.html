@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Next time challenge</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <p>
+        Wpisz godzinę w formacie 24-godzinnym HH:MM, a funkcja zwróci ilość
+        minut, jakie pozostały do najbliższej godziny złożonej z liczb podanych
+        w godzinie wejściowej.
+      </p>
+      <form class="col-wrapper">
+        <div class="col col-1">
+          <input type="text" placeholder="HH:MM" data-input-time />
+        </div>
+        <div class="col col-2">
+          <button data-submit-btn type="submit">sprawdź</button>
+        </div>
+        <div class="col col-3">
+          <p>Najbliższa godzina to: <span data-closest-time>00:00</span>.</p>
+          <p>
+            Zatem wydarzy się to za:
+            <span data-closest-time-minutes>00</span> minut.
+          </p>
+        </div>
+      </form>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
